@@ -1,30 +1,26 @@
-# Habit Tracker PWA
+# Habit Tracker PWA ✅
 
-Installable, offline-first Habit Tracker built with React, Vite, Tailwind, IndexedDB (`idb`), Workbox PWA, and Recharts.
+An **offline-first Progressive Web App (PWA)** to track your daily habits with streaks, reminders, and analytics.  
+Built with **React, TailwindCSS, IndexedDB, and Workbox**.
 
-## Features
-- ✅ Add/rename/delete habits
-- ✅ Daily check-ins with automatic streak calculation
-- ✅ IndexedDB storage for offline use
-- ✅ PWA: installable + offline via Workbox-generated Service Worker
-- ✅ Mock reminder notifications at your chosen time (uses Notification API)
-- ✅ Progress chart (last 30 days)
+## 🚀 Features
+- 📅 **Daily Check-ins** → Mark habits as complete each day.
+- 🔥 **Streak Tracking** → Stay motivated with streak counters.
+- 📊 **Analytics Dashboard** → Visualize your progress with charts.
+- 📲 **Installable PWA** → Works offline and can be installed on desktop/mobile.
+- 🔔 **Reminders (Mock Notifications)** → Get notified to complete habits.
 
-## Quick Start
+## 🛠️ Tech Stack
+- **Frontend:** React + TailwindCSS  
+- **Storage:** IndexedDB (via `idb`)  
+- **PWA:** Workbox for service worker & offline support  
+- **Charts:** Recharts  
+
+## 📦 Installation
+Clone the repository and install dependencies:
+
 ```bash
-# 1) Install deps
+git clone https://github.com/Snehamurudi/habit-tracker-pwa.git
+cd habit-tracker-pwa
 npm install
-
-# 2) Run in dev
-npm run dev
-# open the URL shown (usually http://localhost:5173)
-
-# 3) Build production
-npm run build
-
-# 4) Preview production build (with SW)
-npm run preview
-# open the URL shown (usually http://localhost:4173)
-```
-
-> The service worker is generated during `npm run build` and enabled when you run `npm run preview` or deploy the `dist` folder.
+npm start
